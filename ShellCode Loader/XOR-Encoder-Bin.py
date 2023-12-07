@@ -5,7 +5,7 @@ import re
 parser = argparse.ArgumentParser()
 parser.add_argument("file", help="the path of payload file, need .bin (raw)", nargs='?')
 parser.add_argument("key", help="the key of XOR encode, need integer", nargs='?', default=randint(1,255))
-parser.add_argument("type", help="shellcode需要嵌入的语言", nargs='?'，default='')
+parser.add_argument("type", help="shellcode需要嵌入的语言", nargs='?',default='')
 args = parser.parse_args()
 
 with open(args.file, "rb") as f:
