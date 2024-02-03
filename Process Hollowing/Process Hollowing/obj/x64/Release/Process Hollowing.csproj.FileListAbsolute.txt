@@ -1,0 +1,7 @@
+D:\OSEP\Process Hollowing\Process Hollowing\obj\x64\Release\Process Hollowing.csproj.AssemblyReference.cache
+D:\OSEP\Process Hollowing\Process Hollowing\obj\x64\Release\Process Hollowing.csproj.CoreCompileInputs.cache
+D:\OSEP\Process Hollowing\Process Hollowing\bin\x64\Release\Process Hollowing.exe.config
+D:\OSEP\Process Hollowing\Process Hollowing\bin\x64\Release\Process Hollowing.exe
+D:\OSEP\Process Hollowing\Process Hollowing\bin\x64\Release\Process Hollowing.pdb
+D:\OSEP\Process Hollowing\Process Hollowing\obj\x64\Release\Process Hollowing.exe
+D:\OSEP\Process Hollowing\Process Hollowing\obj\x64\Release\Process Hollowing.pdb

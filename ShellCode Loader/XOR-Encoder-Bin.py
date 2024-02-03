@@ -21,4 +21,4 @@ for b in payload:
 payloadLen = len(encodePayload)
 encodePayload = re.sub("(.{65})", "\\1\n", ','.join(encodePayload), 0, re.DOTALL)
 payloadFormatted += f"byte[] buf = new byte[{str(payloadLen)}] {{\n{encodePayload.strip()}\n}};"
-
+print(payloadFormatted )
